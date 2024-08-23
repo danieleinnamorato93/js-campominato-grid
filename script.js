@@ -17,6 +17,12 @@ for (let i = 1; i <= totalCells; i++) {
     cell.classList.add('cell');
     cell.textContent = i;
 
+    //aggiungo l'evento alla cella
+    cell.addEventListener('click', () => {
+        console.log(`Hai sceltp la numero: ${i}`);
+        cell.classList.add('clicked');
+    });
+
 // inserisco la cella nella griglia
     grid.appendChild(cell);
         }
