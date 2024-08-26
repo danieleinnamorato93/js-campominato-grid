@@ -10,6 +10,8 @@ const totalCells = rows * cols ;
 // Creo una funzione per generare una griglia
 function createGrid() {
 
+    grid.innerHTML = '';
+
 //genero le celle con un ciclo
 
 for (let i = 1; i <= totalCells; i++) {
